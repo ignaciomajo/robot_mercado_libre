@@ -1,5 +1,5 @@
 
-Inicio Proceso Busqueda Articulos: 2025-03-18 18:54:45.221794
-Fin Proceso Busqueda Articulos: 2025-03-18 18:55:11.889414
-Inicio proceso Alerta Marketing: 2025-03-18 18:55:11.916420
-Fin Proceso Alerta Marketing: 2025-03-18 18:55:25.127173
+Inicio Proceso Busqueda Articulos: 2025-03-18 18:58:06.539706
+Fin Proceso Busqueda Articulos: 2025-03-18 18:58:43.621292
+Inicio Proceso Alerta Marketing: 2025-03-18 18:58:43.646969
+Fin Proceso Alerta Marketing: 2025-03-18 18:58:58.938669
