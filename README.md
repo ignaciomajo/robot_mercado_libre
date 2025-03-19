@@ -1,30 +1,46 @@
-# Rocketbot: busqueda_suplementos_deportivos
+# Rocketbot 🚀 : Proyecto Mercado Libre
 
 ![rpa_foto_portada](https://github.com/user-attachments/assets/5856b017-6874-4660-8dd6-6d0b7e582bd8)
 
 ## Índice 📋
 
 1. Descripción del proyecto.
-2. Demostración del funcionalidades y aplicaciones.
-3. Tecnologías utilizadas.
-4. Colaboradores.
-5. Desarrollador del proyecto.
+2. Acceso al proyecto.
+3. Demostración del funcionalidades y aplicaciones.
+4. Tecnologías utilizadas.
+5. Colaboradores.
+6. Desarrollador del proyecto.
 
 ## 1. Descripción del proyecto 📚
 
-Este proyecto mustra tan solo una parte de la capacidad de automatizar un proceso de web scrapping utilizando tencología RPA (Robot Process Automation), en particular **Rocketbot** 🚀. En él, se puede ver como es posible abrir una pagina web y realizar una búsqueda de, en este caso, artículos en la página de Mercado Libre, extrayendo la información relevante que buscamos analizar, como puede ser: criterio de búsqueda, artículos encontrados, precio, descuento que poseen dichos artículos y el link correspondiente para llegar a ellos.
+Este proyecto mustra tan solo una parte de la capacidad de automatizar un proceso de web scrapping utilizando tencología RPA (Robot Process Automation), en particular **Rocketbot** 🚀. El proyecto esta compuesto por 3 robots, el padre llamado **main**, y luego dos robots hijos, llamados **busqueda_suplementos_deportivos** que se encarga de realizar la búsqueda de productos dentro de la página de Mercado Libre, listándolos en un archivo Excel, y luego el segundo, llamado **alerta_suplementos_deportivos**, que toma un precio máximo para cada producto, y luego recorre los registros del archivo hecho por el primer primer robot, y en caso de encontrar un artículo cuyo precio se encuentre por debajo de este umbral, envía un correo electrónico ofertando el producto. Veremos como es posible abrir una pagina web y realizar una búsqueda de, en este caso, artículos en la página de Mercado Libre, extrayendo la información relevante que buscamos analizar, como puede ser: criterio de búsqueda, artículos encontrados, precio, descuento que poseen dichos artículos y el link correspondiente para llegar a ellos, y luego utilizar esta información para generar campañas publicitarias.
 
 Resulta importante remarcar que esto es tan solo un ejemplo, ya que es posible extraer cualquier información de un sitio web usando RPA.
 
+## 2. Acceso al proyecto 📂
 
-## 2. Demostración de funcionalidades y aplicaciones 📝
+## 3. Demostración de funcionalidades y aplicaciones 📝
 
+![upload_db](https://github.com/user-attachments/assets/6bc8dbd9-a81b-41c3-bbd5-1e749ee49017)
+
+Al cargar el archivo `robot.db` 📄, la base de datos aparecerá a la derecha del panel. Al hacer click en esta, nos aparecerá el siguiente menú:
+
+![menu_db](https://github.com/user-attachments/assets/958f3e9a-0fa9-4ccb-a3df-0008c8970556)
+
+En él, se pueden visualizar los robots alojados dentro de la base de datos.
+
+### **Main** 🤖
+
+![main](https://github.com/user-attachments/assets/58d2c408-be87-45f5-bdc0-25051a098282)
+
+Este robot solo cuenta con algunas configuraciones iniciales que se respetan dentro de todos los robots de la base de datos, extraidos del archivo `config.ini` 📄 que se encuentra dentro de la carpeta `resources` 📁, y dos comandos que ejecutan los robots hijos en el orden apropiado para la ejecución del proceso completo, que se efectúa al presionar el botón **Run** marcado en la parte superior de la imagen.
+
+### **Busqueda_suplementos_deportivos** 🤖
 
 ![pantalla_inicial](https://github.com/user-attachments/assets/1d3a6160-2775-43c2-9a00-98724c82aee4)
 
 
-
-Esta es la pantalla inicial una vez ingresamos al menú del robot. Ejecutarlo, solo debemos presionar el botón marcado en un recuadro rojo que dice **Run**. Este ejecutará el robot con las variables predeterminadas.
+Esta es la pantalla inicial una vez ingresamos al menú del robot. Para ejecutarlo, solo debemos presionar el botón marcado en un recuadro rojo que dice **Run**. Este ejecutará el robot con las variables predeterminadas.
 
 A su vez, podemos ver que los pasos que sigue el robot están enumerados en el lado izquierdo encerrados en un recuadro verde, comenzando con el número 1. Esto nos permite entender la lógica que sigue el robot.
 
@@ -72,7 +88,9 @@ Una vez que el robot haya extraído la información de los artículos delimitado
 
 Finalmente el archivo Excel que contiene toda la información extraída quedará guardado en la carpeta **resources** que se encuentra dentro de **main**.
 
-## 3. Tecnologías utilizadas 🛠️
+### **Alerta_suplementos_deportivos** 🤖
+
+## 4. Tecnologías utilizadas 🛠️
 
 * `Rocketbot Studio (v.2025.01.06)`
 * `Git and GitHub`
@@ -81,7 +99,7 @@ Finalmente el archivo Excel que contiene toda la información extraída quedará
 * `Python`
 * `Excel (requerido para ejecutar el robot)`
 
-## 4. Colaboradores del proyecto 🏗️
+## 5. Colaboradores del proyecto 🏗️
 
 Quiero agradecer a:
 
@@ -99,7 +117,7 @@ Por la capacitación en la herramienta y en la oportunidad de aprender de la man
 Por desarrollar la herramienta y proveer cursos gratuitos para aprender a utilizarla.
 
 
-## 5. Desarrollador del proyecto 👷
+## 6. Desarrollador del proyecto 👷
 
 ![imagen-readme](https://github.com/user-attachments/assets/133bc743-0424-4120-a7a6-7245d2f28f8c)
 
