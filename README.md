@@ -19,6 +19,20 @@ Resulta importante remarcar que esto es tan solo un ejemplo, ya que es posible e
 
 ## 2. Acceso al proyecto 📂
 
+Para obtener el proyecto tienes dos opciones:
+
+1. Clonar el repositorio utilizando la línea de comandos. Solo debes dirigirte al directorio donde deseas clonar el mismo e ingresar el comando:
+   `https://github.com/ignaciomajo/robot_mercado_libre`
+
+2. O puedes descargarlo directamente desde el repositorio en GitHub en el siguiente enlace:
+   <p><a href="https://github.com/ignaciomajo/robot_mercado_libre">https://github.com/ignaciomajo/robot_mercado_libre</p>
+
+   Esto te llevará a la siguiente pantalla, donde deberás seguir los siguientes pasos:
+   
+![archivo_zip](https://github.com/user-attachments/assets/230d4fbd-27ac-4def-962e-df816b82ac7b)
+
+Esto descargará un archivo comprimido `.zip`, que podras alojar en el directorio que desees.
+
 ## 3. Demostración de funcionalidades y aplicaciones 📝
 
 ![upload_db](https://github.com/user-attachments/assets/6bc8dbd9-a81b-41c3-bbd5-1e749ee49017)
