@@ -88,7 +88,47 @@ Una vez que el robot haya extraído la información de los artículos delimitado
 
 Finalmente el archivo Excel que contiene toda la información extraída quedará guardado en la carpeta **resources** que se encuentra dentro de **main**.
 
-### **Alerta_suplementos_deportivos** 🤖
+### **Alerta_suplemento_deportivo** 🤖
+
+Al igual que en los robots anteriores, para ejecutar el proceso solo se necesita presionar el botón de **Run**.
+Después de algunas configuraciones iniciales traidas del archivo `config.ini` 📄, esta automatización intentará abrir el archivo creado por el robot **busqueda_suplementos_deportivos**🤖.
+
+![obtener_productos](https://github.com/user-attachments/assets/8e872c98-4537-482a-9769-90a36a116a96)
+
+Lo primero que hará sera obtener los productos (criterios de busqueda utilizado para listar los artículos) y mantener los valores únicos presentes en el archivo.
+
+![producto_filtro](https://github.com/user-attachments/assets/152f40ea-5512-42d8-a74a-cb0212dd72c2)
+
+Luego, el proceso iterará sobre esta lista con los valores únicos obtenidos en la etapa anterior, y determinará el precio máximo para cada uno de los productos, también alojados en el archivo `config.ini` 📄.
+
+![segundo_bucle](https://github.com/user-attachments/assets/c6017395-cb6d-455c-921e-4a30a77e7f27)
+
+Luego, dentro del primer bucle tenemos otro, que recorrerá todos los registros que se encuentran dentro del archivo Excel una vez por cada valor único de producto (criterio de búsqueda).
+
+![condicional](https://github.com/user-attachments/assets/48d5d258-323f-43c9-930e-5638159cd3fa)
+
+Por cada iteración, si el artículo coincide con el producto que estamos analizando, y su precio es menor al precio máximo establecido, almacenará dicho registro en una variable que contendrá los artículos a ofertar en la campaña de marketing.
+
+![conexion_gmail](https://github.com/user-attachments/assets/5114e939-6228-44a6-ad55-c1900d09d0f8)
+
+
+Si la variable que contiene los artículos a ofertar contiene al menos un registro, se establecerá la conexión al servidor de Gmail✉️.
+
+*Nota: el correo y la contraseña han sido encriptados para protección de datos sensibles*
+
+Luego se hara una validación para asegurarse que la conexión al servidor se ha realizado correctamente, y entrará en un nuevo bucle:
+
+![alerta_marketing](https://github.com/user-attachments/assets/3b915cd8-cdee-4bae-8b70-6edf9d9dfd2e)
+
+Este, itera sobre la lista que contiene los artículos que cumplieron con la condición de tener un precio menor al máximo establecido, y obtiene de cada registro:
+
+* Nombre del artículo
+* Precio
+* Descuento (si aplica)
+* Link del artículo
+
+Por último, el robot enviará un correo al usuario con la información anterior para ofertar los artículos que pueden interesarle.
+
 
 ## 4. Tecnologías utilizadas 🛠️
 
